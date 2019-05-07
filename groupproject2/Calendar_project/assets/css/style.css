@@ -1,0 +1,13 @@
+body{
+    background-image: url("../images/backgrounds.jpg");  
+    
+}
+
+.jumbotron{
+    background-image: url("../images/calender.jpg");
+    border:3px solid #cccc;
+    
+}
+
+
+

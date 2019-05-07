@@ -1,0 +1,28 @@
+body {
+    background-color: lightblue
+}
+
+.jumbotron{
+    text-align: center; 
+    border:5px solid #cccc;
+    font-size: 100px; 
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+}
+
+.nav {
+    font-family: 'Times New Roman', Times, serif; 
+    font: 6px;
+    font-size: 33px;  
+}
+
+.display-4, .lead,  {
+    text-align: center; 
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+h2, h5, h4, .mb-3, mb-4, row {
+    font-family: 'Times New Roman', Times, serif; 
+
+}

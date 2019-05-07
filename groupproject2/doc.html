@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Floe - Group Project 2</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Link CSS Style Sheet-->
+    <link rel="stylesheet" href="css/style.css">
+    
+
+  </head>
+  <body>
+        
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">FLOE</h1>
+          <p class="lead">Make booking easier, one band at a time!</p>
+          <img src="img/icecube.png" alt="ice cube">
+        </div>
+    </div>
+
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" a href="#artistinfo">Artist Info</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" a href="#venueinfo">Venue Info</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" a href="#showinfo">Show Info</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Calendar_project/index.html">Calendar</a>
+          </li>
+    </ul>
+    <form>
+    <div class="col-md-12 order-md-1">
+        <a id="artistinfo"></a>
+        <h2>Artist Info</h2>
+        <br>
+        <div class="form-group">
+            <label for="formGroupExampleInput">Band Name</label>
+            <input type="text" class="form-control" id="formGroupExampleInput">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Genre</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="i.e. Country, Rock, Pop, Rap, Metal, Alternative">
+        </div>
+        <br>
+        <h5>Social Media Links</h5>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Facebook</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2">
+            </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Instagram</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Twitter</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Website:</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2">
+        </div>
+        <br>
+        <a id="venueinfo"></a>
+        <h2>Venue Info</h2>
+        <form class="needs-validation" novalidate="">
+        <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="firstName">First name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    <div class="invalid-feedback">
+                    Valid first name is required.
+                </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="lastName">Last name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                    Valid last name is required.
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+                <label for="address">Phone Number</label>
+                <input type="text" class="form-control" id="phonenumber" placeholder="999-999-9999" required="">
+                <div class="invalid-feedback">
+                     Phone number required.
+                </div>
+        </div>
+    
+        <div class="mb-3">
+            <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                <div class="invalid-feedback">
+                    Please enter venue email address.
+                    /div>
+        </div>
+    
+        <div class="mb-3">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+            <div class="invalid-feedback">
+                 Please enter venue address.
+            </div>
+        </div>
+    
+        <div class="mb-3">
+            <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+        </div>
+    
+        <div class="row">
+            <div class="col-md-5 mb-3">
+            <label for="country">Country</label>
+            <select class="custom-select d-block w-100" id="country" required="">
+                <option value="">Choose...</option>
+                <option>United States</option>
+                <option>Canada</option>
+            </select>
+            <div class="invalid-feedback">
+                Please select a valid country.
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <label for="state">State</label>
+            <select class="custom-select d-block w-100" id="state" required="">
+                <option value="">Choose...</option>
+                <option>Minnesota</option>
+                <option>Wisconsin</option>
+                <option>North Dakota</option>
+                <option>South Dakota</option>
+                <option>Iowa</option>
+                <option>Nebraska</option>
+            </select>
+        <div class="invalid-feedback">
+                Please provide a valid state.
+        </div>
+        </div>
+            <div class="col-md-3 mb-3">
+                <label for="zip">Zip</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required="">
+                <div class="invalid-feedback">
+                Zip code required.
+            </div>
+            </div>
+        </div>
+        <br>
+        <h4>Who is doing promotional materials?</h4>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline1">Venue will provide promotional materials.</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline2">Band is to provide promotional materials.</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline3">Both venue and band will provide promotional materials.</label>
+          </div>
+        </div>
+    </form>
+    <br>
+        <a id="showinfo"></a>
+        <h2>Show Info</h2>
+    <form>
+        <div class="form-group">
+            <label for="formGroupExampleInput">Kind of Event</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Birthday, Wedding, Anniversary">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Date of Event</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Example 11/22/2000">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Time of Event</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="What time the band is to start?">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Pay</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="How much the event pays.">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Additional information:</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2">
+        </div>
+    </form>
+        <br>
+        <form>
+        <h4>Is a sound system needed?</h4>
+        <div class="col-md-4 mb-3">
+                <label for="soundstyem">Sound System</label>
+                <select class="custom-select d-block w-100" id="state" required="">
+                    <option value="">Must Choose One...</option>
+                    <option>Sound system already at venue.</option>
+                    <option>Band needs to bring it's own sound system.</option>
+                </select>
+        </div>
+          <br>
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
